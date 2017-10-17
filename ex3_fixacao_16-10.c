@@ -6,12 +6,12 @@ int main()
 {
   
   int n1,n2,cont;
-  
+  srand (time(NULL));
   n1 = 0;
   
-  for (cont=1 ; cont < 6 ; cont++)
+  for (cont=1 ; cont < 10 ; cont++)
   {
-      n2 = 1 + (rand() % 99);    
+      n2 = 1 + (rand() % 100);    
       printf ("Numero aleatorio: %i ",n2);
       printf ("\n");
       
