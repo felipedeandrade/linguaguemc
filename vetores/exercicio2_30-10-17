@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+// Descrição
+
+int main()
+{
+
+  int n[100];
+  int cont;
+  srand (time(NULL));
+  
+  for (cont=0;cont<=100;cont++){
+      n[cont] = rand() % 100;
+      printf ("n[%i] = %i \n",cont, n[cont]);
+      } 
+  
+  printf ("\n\n\n"); 
+  
+  system("PAUSE");	
+  return 0;
+}
