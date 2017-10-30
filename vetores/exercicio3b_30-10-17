@@ -1,0 +1,46 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+// Descrição
+
+int main()
+{
+
+  int n;
+  int par[100],x;
+  int impar[100],y;
+  int cont,cont1,cont2;
+  srand (time(NULL));
+  
+  x=0;
+  y=0;
+
+  for (cont=0;cont<=99;cont++){
+      n = rand() % 200;
+      if ( n % 2 == 00 ){
+         par[x] = n;
+         x++;     
+      } else {
+             impar[y] = n;
+             y++;
+        }     
+ }
+  
+  printf ("Pares: [%i] \n\n", x);
+  for (cont1=0;cont1<x;cont1++){
+      printf ("%i, ", par[cont1]);
+      }
+  
+  printf("\n\n----------\n\n");
+      
+  printf ("Impares: [%i] \n\n", y);
+  for (cont2=0;cont2<y;cont2++){
+      printf ("%i, ", impar[cont2]);
+      }   
+        
+  printf ("\n\n\n"); 
+  
+  system("PAUSE");	
+  return 0;
+}
