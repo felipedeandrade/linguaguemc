@@ -8,7 +8,6 @@ int main()
 
   int n[100];
   int cont;
-  srand (time(NULL));
   
   for (cont=0;cont<=100;cont++){
       n[cont] = rand() % 100;
