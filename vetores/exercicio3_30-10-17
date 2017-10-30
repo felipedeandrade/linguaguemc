@@ -1,0 +1,40 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <conio.h>
+#include <time.h>
+
+// Gerando númeroa aleatório e classificando como pares e impares, exibindo na tela o seu conjunto.
+
+int main()
+{
+
+  int n[100];
+  int x;
+  int cont,cont1,cont2;
+  srand (time(NULL));
+
+  printf ("Pares: \n\n");
+  for (cont=0;cont<=99;cont++){
+      n[cont] = rand() % 100;
+      if (n[cont] % 2 == 0) {
+          printf ("%i, ", n[cont]);        
+                  }    
+      }
+  
+  printf("\n\n----------\n\n");
+      
+  printf ("Impares: \n\n");
+  for (cont1=0;cont1<=99;cont1++){
+      n[cont1] = rand() % 100;
+      if (n[cont1] % 2 != 0) {
+          printf ("%i, ", n[cont1]);        
+                  }    
+      }    
+      
+
+      
+  printf ("\n\n\n"); 
+  
+  system("PAUSE");	
+  return 0;
+}
